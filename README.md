@@ -4,15 +4,14 @@ It uses setInterval to create a running clock used to enforce the rate, and rese
 See the source for details. 
 </p>
 
-# Basic Usage #
-## Create an instance of Limitor. 
-## Pass in the max_actions, interval and verbose console.
+## Basic Usage #
+Create an instance of Limitor.  *Limitor(maxOperations, maxInterval, verbose=false)
 <pre>
 var lm = new Limitor(3, 2000, true);
 lm.init();
 </pre>
 
-## Basic function to execute.
+Basic function to execute.
 <pre/>
 let addNums = (x, y) => {
     result = x + y;
