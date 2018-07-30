@@ -1,9 +1,8 @@
 /**
  * Limitor by Derwin Emmanuel. 
  * Implements a class for Rate Limiter or Debouncer for function execution. 
- * Uses setInterval implementation
- * to constantly reset the EPS timer. Can use this to have multiple ratelimiters
- * for different operations.
+ * Uses setInterval implementation to constantly reset the EPS timer. 
+ * Can use this to have multiple ratelimiters for different operations.
  */
 
 export default class Limitor {
@@ -45,7 +44,7 @@ export default class Limitor {
             func.apply(func);
             return true;
         } else {
-        // Bounce off over EPS calls.
+            // Bounce off over EPS calls.
             this.logToConsole("Hit rate limit for function execution. Try Later");
             return false;
         }
