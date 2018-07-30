@@ -1,5 +1,11 @@
+<p>
+Limitor is a class based implementation of a function rate limiter / debouncer.
+It uses setInterval to create a running clock used to enforce the rate, and reset every x millisecons.
+See the source for details. 
+</p>
 
-# Create an instance of Limitor. 
+# Basic Usage #
+## Create an instance of Limitor. 
 ## Pass in the max_actions, interval and verbose console.
 <pre>
     var lm = new Limitor(3, 2000, true);
@@ -13,13 +19,10 @@
     console.log(result);
     }
 </pre>
-    btn = document.createElement('button');
-    btn.innerText = "Click me";
-    document.body.appendChild(btn);
+
+Run function through the lm instance.
 <pre>
-    btn.addEventListener('click', (e)=>{
-        lm.exec(() => {
-            addNums(2,3);
-        })
-    })
+lm.exec(() => {
+    addNums(2,3);
+})
 </pre>
