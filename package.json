@@ -1,0 +1,8 @@
+{
+    "name": "limitor",
+    "description": "A simple class-based implementation of a debouncer/rateLimiter. Use to limit blocking scripts for smooth web apps.",
+    "authors": "author",
+    "version": "0.1.0",
+    "main": "Limitor",
+    "dependencies": {}
+}
